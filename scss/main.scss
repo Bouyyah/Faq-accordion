@@ -2,14 +2,55 @@
 @import "variables";
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $mainBg;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  background: rgb(175, 103, 233);
+  background: linear-gradient(
+    180deg,
+    rgba(175, 103, 233, 1) 0%,
+    rgba(101, 101, 231, 1) 100%
+  );
+  // background-image: url('../images/bg-pattern-mobile.svg');
 }
 
+.card {
+    background-color: white;
+    margin: 16rem 2rem 5rem 2rem;
+    padding: 7rem 2rem 4rem 2rem;
+    position: relative;
+    border-radius: 2.3rem;
+    &-images{
+        width: 80%;
+        position: absolute;
+        top: -2.3rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url('../images/bg-pattern-mobile.svg');
+    }
+
+    &-faq{
+        margin-top: 7rem;
+
+        &-title{
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+    }
+    
+}
+
+// @media (min-width: 375px){
+//     body {
+//     background-image: url('../images/bg-pattern-desktop.svg');
+
+//     }
+// }

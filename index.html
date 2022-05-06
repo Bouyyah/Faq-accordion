@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.css">
     <title>Frontend Mentor | FAQ Accordion Card</title>
@@ -15,7 +17,11 @@
 
     <main class="card">
         <div class="card-images">
-            <img src="./images/illustration-box-desktop.svg" alt="box">
+           
+            <picture>
+                <source media="(min-width:375px)" srcset="./images/illustration-box-desktop.svg">
+                
+            </picture>
             <picture>
                 <source media="(min-width:425px)" srcset="./images/illustration-woman-online-desktop.svg">
                 <img src="./images/illustration-woman-online-mobile.svg" alt="woman online" style="width:auto;">
@@ -24,39 +30,54 @@
         <section class="card-faq">
             <h1 class="card-faq-title">FAQ</h1>
             <div class="card-faq-question">
-                <h2 class="card-faq-question-title"></h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text"></p>
-            </div>
-            <div class="card-faq-question">
-                <h2 class="card-faq-question-title">How many team members can I invite?</h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text">You can invite up to 2 additional users on the Free plan. There is no limit on
+                <div class="card-faq-question-header">
+                    <h2 class="card-faq-question-header-title">How many team members can I invite?</h2>
+                    <img class="card-faq-question-header-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+                </div>
+
+                <p class="card-faq-question-text">You can invite up to 2 additional users on the Free plan. There is no
+                    limit on
                     team members for the Premium plan.</p>
             </div>
             <div class="card-faq-question">
-                <h2 class="card-faq-question-title">What is the maximum file upload size?</h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                <div class="card-faq-question-header">
+                    <h2 class="card-faq-question-header-title">What is the maximum file upload size?</h2>
+                    <img class="card-faq-question-header-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+                </div>
+
+                <p class="card-faq-question-text">No more than 2GB. All files in your account must fit your allotted
+                    storage space.</p>
             </div>
             <div class="card-faq-question">
-                <h2 class="card-faq-question-title">How do I reset my password?</h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text">Click “Forgot password” from the login page or “Change password” from your profile page.
+                <div class="card-faq-question-header">
+                    <h2 class="card-faq-question-header-title">How do I reset my password?</h2>
+                    <img class="card-faq-question-header-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+                </div>
+
+                <p class="card-faq-question-text">Click “Forgot password” from the login page or “Change password” from
+                    your profile page.
                     A reset link will be emailed to you.</p>
             </div>
             <div class="card-faq-question">
-                <h2 class="card-faq-question-title">Can I cancel my subscription?</h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                <div class="card-faq-question-header">
+                    <h2 class="card-faq-question-header-title">Can I cancel my subscription?</h2>
+                    <img class="card-faq-question-header-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+                </div>
+
+                <p class="card-faq-question-text">Yes! Send us a message and we’ll process your request no questions
+                    asked.</p>
             </div>
             <div class="card-faq-question">
-                <h2 class="card-faq-question-title">Do you provide additional support?</h2>
-                <img class="card-faq-question-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
-                <p class="card-faq-question-text">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-            </div>           
+                <div class="card-faq-question-header">
+                    <h2 class="card-faq-question-header-title">Do you provide additional support?</h2>
+                    <img class="card-faq-question-header-arrow" src="./images/icon-arrow-down.svg" alt="arrow down">
+                </div>
+
+                <p class="card-faq-question-text">Chat and email support is available 24/7. Phone lines are open during
+                    normal business hours.</p>
+            </div>
         </section>
-       
+
     </main>
 
 
