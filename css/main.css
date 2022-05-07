@@ -159,3 +159,37 @@ body {
   color: #787887;
   display: none;
 }
+
+@media (min-width: 426px) {
+  .card {
+    width: 70%;
+    overflow: hidden;
+  }
+  .card-images-illustration {
+    top: 50%;
+    left: 27rem;
+  }
+  .card-images-bg {
+    width: 100%;
+    top: 17.8rem;
+    left: -7.6rem;
+  }
+  .card-faq {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    margin-top: 0;
+  }
+  .card-faq-title {
+    text-align: start;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .card-faq-question {
+    width: 80%;
+    cursor: pointer;
+  }
+  .card-faq-question-header-title:hover {
+    color: #f47c57;
+  }
+}
