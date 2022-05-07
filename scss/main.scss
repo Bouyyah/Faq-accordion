@@ -21,31 +21,85 @@ body {
 }
 
 .card {
-    background-color: white;
-    margin: 16rem 2rem 5rem 2rem;
-    padding: 7rem 2rem 4rem 2rem;
-    position: relative;
-    border-radius: 2.3rem;
-    &-images{
-        width: 80%;
-        position: absolute;
-        top: -2.3rem;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background-image: url('../images/bg-pattern-mobile.svg');
-    }
-
-    &-faq{
-        margin-top: 7rem;
-
-        &-title{
-            text-align: center;
-            margin-bottom: 3rem;
-            font-size: 3rem;
-            font-weight: 700;
-        }
+  background-color: white;
+  margin: 16rem 1.5rem 5rem 1.5rem;
+  padding: 7rem 2rem 4rem 2rem;
+  position: relative;
+  border-radius: 2.3rem;
+  width: 90%;
+  &-images {
+    
+    &-illustration{
+      width: 70%;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
     }
     
+    &-bg{
+      width: 80%;
+    position: absolute;
+    top: 4.8rem;
+    left: 18.4rem;
+    transform: translate(-50%, -50%);
+    }
+    
+  }
+
+  &-faq {
+    margin-top: 7rem;
+
+    &-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    &-question {
+      border-bottom: 1px solid $lightGreyishBlue;
+
+      &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+
+        &-title {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $veryDarkGreyishBlue;
+        }
+      }
+
+      &:focus {
+        .card-faq-question {
+          &-header {
+            &-title {
+              font-weight: 700;
+              color: $veryDarkDesaturatedBlue;
+            }
+            &-arrow {
+              transform: rotateX(180deg);
+            }
+          }
+
+          &-text{
+            display: block;
+          }
+        }
+      }
+
+      &-text {
+        padding: 1.25rem 0;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        color: $darkGreyishBlue;
+        display: none;
+      }
+    }
+  }
 }
 
 // @media (min-width: 375px){

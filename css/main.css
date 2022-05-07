@@ -88,19 +88,27 @@ body {
 
 .card {
   background-color: white;
-  margin: 16rem 2rem 5rem 2rem;
+  margin: 16rem 1.5rem 5rem 1.5rem;
   padding: 7rem 2rem 4rem 2rem;
   position: relative;
   border-radius: 2.3rem;
+  width: 90%;
 }
 
-.card-images {
-  width: 80%;
+.card-images-illustration {
+  width: 70%;
   position: absolute;
-  top: -2.3rem;
+  top: -2rem;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../images/bg-pattern-mobile.svg");
+}
+
+.card-images-bg {
+  width: 80%;
+  position: absolute;
+  top: 4.8rem;
+  left: 18.4rem;
+  transform: translate(-50%, -50%);
 }
 
 .card-faq {
@@ -112,4 +120,42 @@ body {
   margin-bottom: 3rem;
   font-size: 3rem;
   font-weight: 700;
+}
+
+.card-faq-question {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.card-faq-question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.card-faq-question-header-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #4a4b5e;
+}
+
+.card-faq-question:focus .card-faq-question-header-title {
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+.card-faq-question:focus .card-faq-question-header-arrow {
+  transform: rotateX(180deg);
+}
+
+.card-faq-question:focus .card-faq-question-text {
+  display: block;
+}
+
+.card-faq-question-text {
+  padding: 1.25rem 0;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  color: #787887;
+  display: none;
 }
